@@ -2,9 +2,10 @@ import os
 import time
 from datetime import datetime, timedelta
 
-TARGET_DIRECTORY = r"C:\Users\ditap\OneDrive\Desktop\Новая папка (2)"  # Для теста создайте рядом папку Temp_Folder и положите туда файлы
+TARGET_DIRECTORY = r"Temp_Folder"  # замените Temp_Folder на путь к папке 
 
-DAYS_THRESHOLD = 20
+DAYS_THRESHOLD = 20   # замените на количество дней, в течение которых не изменялся файл. все что равно этому количеству
+                      # или превышает его будет удалено
 
 LOG_FILE_NAME = "cleanup_log.txt"
 
